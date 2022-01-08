@@ -6,19 +6,52 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+    display: flex;
+}
 /*
 Add some style blocks below this line to style the cards.
 Feel free to borrow from Exercise 1.
 */
 
 
+.card {
+
+   border: solid  1px #CCC;
+   margin: 30px 0px 0px 30px;
+   
+}
+.card p,h2,button{
+   margin: 5%;
+}
+
+.card img {
+    width:100%;
+
+}
+
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
+    main {
+        flex-wrap: wrap;
+    }
+
+    .card  {
+        width: 45%;
+    }
 
 }
 
 /* Mobile Phone Media Query */
 @media only screen and (max-width: 600px) {
 
-    
+    main {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 15px;
+    }
 }
